@@ -1,0 +1,215 @@
+.mainPersonHEading2 {
+    color: #297dc1;
+    font-size: 30px;
+    padding-top: 70px;
+    line-height: 50px;
+}
+
+h1.textCentered {
+    color: #297dc1;
+    font-size: 28px;
+    line-height: 1.5;
+    font-weight: 700;
+    margin-bottom: 50px;
+    padding-top: 0;
+    text-align: center;
+}
+
+.innerPageHeading{
+    color: #297dc1;
+    font-size: 40px;
+    padding-top: 70px;
+    line-height: 50px;
+}
+
+.personIntro img {
+    float: left;
+    margin-right: 15px;
+    width: 140px;
+}
+
+.funclItemRight p{
+}
+
+.personBlock__link a{
+    display: inline-block;
+    padding: 10px 50px 10px 30px;
+
+    border: 2px solid #297dc1;
+    color: #297dc1;
+
+    text-decoration: none;
+    margin-left: 40px;
+
+    position: relative;
+}
+
+.personBlock__link a::after{
+    content: '\f054';
+    font-family: "Font Awesome 5 Free";
+    font-size: 14px;
+    line-height: 1;
+    font-weight: 900;
+    opacity: .75;
+    color: #297dc1;
+
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.personBlock__link a:hover::after{
+    transform: translate(20%,-50%);
+}
+
+.personBlockRight .personBlock__link{
+    text-align: right;
+}
+
+.personBlockRight .personBlock__link a{
+    margin-left: 0;
+    margin-right: 40px;
+}
+
+.personBlock__link_mob{
+    display: none;
+    clear: both;
+}
+
+.personPreim{
+    margin-bottom: 40px;
+}
+
+.secondScreen_inner .personPreim{
+    text-align: right;
+}
+
+.categoryPersonBlock .screenContainer{
+    position: relative;
+    margin-bottom: 0;
+    padding-top: 180px;
+}
+
+.personIntro_right img{
+    float: right;
+    margin-left: 15px;
+    margin-right: 0;
+}
+
+.innerPageTop .funclItemRight p{
+    display: block;
+}
+
+.personIntroInner{
+    clear: both;
+    margin-bottom: 40px;
+
+    overflow: hidden;
+}
+
+.personIntroInner img{
+    float: left;
+    margin-right: 15px;
+}
+
+/*
+///////////// Видео во внутренней странице
+*/
+
+.innerInfoVideo{
+    margin-bottom: 40px;
+}
+
+.videoinstruction-block {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.videoinstruction-block__bg {
+    position: relative;
+    overflow: hidden;
+    height: 586px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    border-radius: 15px;
+    border: 14px solid #e7f1f9;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.videoinstruction-block__play {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    color: #d1e4f3;
+
+    text-align: center;
+    transition: all 283ms ease;
+}
+
+.videoinstruction-block__play_dark{
+    color: #297dc1;
+}
+
+.videoinstruction-block__play:hover{
+    color: #0e82e2;
+    transform: translate(-50%, -50%) scale(1.05);
+
+    text-decoration: none;
+}
+
+.rgbaToneWrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(231, 241, 249, 0.3);
+}
+
+.videoinstruction-block__play .fa-play-circle {
+    font-size: 100px;
+}
+
+.videoinstruction-block__text {
+    display: block;
+    margin: 12px 0 0 0;
+    font-size: 18px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.vnedrenie__formLabel{
+    line-height: 22px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+
+
+
+/* мелкие доработки */
+
+.entry-content .accordion-item__row{
+    margin: 0;
+}
+
+
+.entry-content .accordion-item__row  ul li{
+
+}
+
+.entry-content .accordion-item__row ul li:before{
+    content: none;
+    display: none;
+}
+
+

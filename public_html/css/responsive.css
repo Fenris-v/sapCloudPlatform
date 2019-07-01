@@ -1,0 +1,845 @@
+@charset "UTF-8";
+
+
+/* 
+
+Изначально планировалось 
+для всех устройств шире 1280px 
+делать макет на ширине 1150 или 1240px.
+
+А все разрешения до 1280 получают макет 1020.
+
+*/
+
+
+/* Главная верстка делается под вайдскрин - те все что шире 1366*/
+
+
+img{
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 hack */
+}
+
+
+@media only screen and (max-width: 1366px) {
+	.bodyNoScrolled{
+		overflow: hidden;
+		height: 100%;
+	}
+
+	.menuScrolled{
+		overflow-y: auto;
+		-webkit-overflow-scrolling:touch;
+	}
+
+}
+
+
+/* Маленькие ноутбуки и профессиональные планшеты */
+
+@media only screen and (max-width: 1280px) {
+	
+	.container{
+		width: 1080px;
+		margin: 0 auto;
+	}
+	
+	.secondBlock .owl-prev {
+		left: -10px;
+	}
+	
+	.secondBlock .owl-next {
+		left: auto;
+		right: -10px;
+	}
+	
+	.clients .owl-prev {
+		left: -10px;
+	}
+	
+	
+	.clients .owl-next {
+		left: auto;
+		right: -10px;
+	}
+
+	.subheaderPromo{
+	}
+
+	.subheaderPromo__Text{
+		margin-bottom: 8px;
+	}
+
+	.subheaderPromo__link{
+		float: left;
+	}
+}
+
+
+/* Неизвестные устройства и очень старые мониторы */
+
+@media only screen and (max-width: 1080px) {
+	
+	#hamburger{
+		display: block;
+	}
+	
+	.container{
+		width: 100%;
+		margin: 0;
+		padding:0 20px;
+	}
+	
+	.topNav{
+		display:none;
+		position:fixed;
+		top:0;
+		right:-30%;
+		float: none;
+		width: 30%;
+		height: 100%;
+		background: #fff;
+		padding: 80px 20px;
+	}
+	
+	.topNav__item {
+		display:block;
+		margin: 0 0 20px;
+	}
+
+	#mobileMenu .topNav__item {
+		margin: 0;
+		border-bottom: 1px solid #edf5f8;
+	}
+
+	#mobileMenu .topNav__item:first-child{
+		border-top: 1px solid #edf5f8;
+	}
+
+	.topNav_2levelList_m li{
+		border-top: 1px solid #fff;
+	}
+
+	.topNav_2levelList_m li:first-child{
+		border-top: 0;
+	}
+	
+	.secondBlock__list {
+		display: block;
+		margin: 0;
+		padding: 0;
+		width: 100%!important;
+	}
+	
+	.clients__list {
+		display: block;
+		margin: 0;
+		padding: 45px 0 0;
+		width: 100%!important;
+	}
+	
+	.owl-nav{
+		display:none;
+	}
+
+
+
+	.footer__socials {
+		text-align: center;
+		float: none;
+		clear: both;
+		width: 100%;
+		padding-top: 30px;
+	}
+	
+	.footer__contacts {
+		float: left;
+		width: 60%;
+	}
+	
+	.footer__copyright {
+		float: left;
+		width: 40%;
+	}
+	
+	.subheader{
+	    height: auto;
+	}
+	.eventLink__wrapper{
+	    padding-top: 15px;
+	    margin-bottom: 15px;
+	    float: none;
+	    width: 100%;
+	}
+
+	.subheaderPromo{
+		text-align: center;
+	}
+
+	.subheaderPromo__Text{
+		float: none;
+		display: block;
+		margin-bottom: 8px;
+	}
+
+	.subheaderPromo__link{
+		float: none;
+	}
+
+}
+
+
+
+/* большие планшеты */
+
+/* 
+
+Начиная с планшетов
+убирается сайдбар либо 
+делаются новости в 1 колонку 
+
+*/
+
+@media only screen and (max-width: 940px) {
+
+		
+	#vnedrenie__input_submit, #broshura__input_submit {
+    	width: 100%;
+	}
+
+	.logoWrapper {
+		float: left;
+		width: 35%;
+	}
+
+	.phoneCtaWrapper {
+		width: 45%;
+		width: 55%;
+	}
+
+	.topNav__link_cta{
+		border: 0;
+		text-decoration: underline;
+		padding: 0;
+		margin-right: 20px;
+	}
+
+	.topNav{
+		width: 400px;
+	}
+
+
+	.vnedrenie__Wrapper {
+		display: block;
+		margin: 0;
+		width: 100%;
+	}
+	
+	.broshura .vnedrenie__Wrapper {
+       width: 100%;
+    }
+
+	.vnedrenie__input{
+		-webkit-appearance: none; /*отключаем стили в мобильном сафари*/
+	}
+
+	#mobileMenu{
+		top: -70px;
+		padding-bottom: 70px;
+		transform: translateY(70px); /*чит для дырки снизу в мобильном сафари*/
+		box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 10px;
+	}
+    
+    .vnedrenie__inputButton {
+        display:block;
+		margin:0;
+		width: 100%;
+    }
+		
+	.form__confirm, .form__cancel {
+		display: block;
+		margin: 10px auto 0;
+	}
+	
+	.broshura, .vnedrenie {
+		height: auto;
+	}
+		
+	.bigphoto__img {
+		max-width: 100%;
+		max-height: 400px;
+		position: static;
+		transform: none;
+	}
+
+	#screenShots__bigphoto{
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+	}
+
+	.macbookOver{
+		width: 100%;
+	}
+
+	.bigImg_wrapper {
+		width: 77%;
+		height: auto;
+		margin-bottom: 70px;
+	}
+
+		
+
+}
+
+
+@media only screen and (max-width: 768px) {
+
+	.firstScreen h1, .firstScreen h2, .firstScreen_inner h1, .firstScreen_inner h2, .categoryPersonBlock h2{
+		font-size: 30px;
+	}
+
+	.personBlockLeft, .halfBlock, .personBlockRight{
+		width: 100%;
+		float: none;
+	}
+
+	.phoneCtaWrapper {
+		width: 52%;
+		margin-right: 13%;
+	}
+
+	.topNav {
+		width: 320px;
+	}
+
+	.logoWrapper {
+		float: left;
+		width: 35%;
+	}
+
+	.descriptionLogo {
+		font-size: 11px;
+	}
+
+	.phoneRow{
+		font-size: 22px;
+	}
+
+	.personBlock__link {
+		display: none;
+	}
+
+	.personBlock__link_mob {
+		display: block!important;
+	}
+
+	.personBlock__link a {
+		margin: 0;
+		display: block;
+		border: 3px solid #297dc1;
+	}
+
+	.personBlock__link, .personBlockRight .personBlock__link {
+		text-align: center;
+	}
+
+	.categoryPersonBlock .screenContainer {
+		padding-top: 0;
+	}
+
+	.bigphoto__img {
+		position: static;
+		transform: none;
+	}
+
+	#screenShots__bigphoto{
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+	}
+
+	.macbookOver{
+		width: 100%;
+	}
+
+	.bigImg_wrapper {
+		width: 77%;
+		height: auto;
+		margin-bottom: 70px;
+	}
+
+	.midPalbum__bigphoto .bigImg_wrapper, #innerPalbum__bigphoto .bigImg_wrapper {
+		width: 100%;
+		position: relative;
+		height: auto;
+		margin-bottom: 0;
+	}
+
+	.midPalbum__bigphoto .bigphoto__img, #innerPalbum__bigphoto .bigphoto__img {
+		position: static;
+		transform: none;
+		margin: 0 auto;
+	}
+
+	.bigImgDescr, .bigphoto__item p {
+		position: static;
+		bottom: auto;
+		width: auto;
+		display: block;
+		text-align: center;
+	}
+
+	.screenContainer{
+		margin-bottom: 0;
+	}
+
+	.bottomInput_wrapper{
+		letter-spacing: 0;
+		margin: 0;
+	}
+
+	.bottomInput{
+		width: 49%;
+		margin: 0;
+	}
+
+	.functionsList{
+		letter-spacing: 0;
+	}
+
+	.functionsList li{
+		width: 32%;
+		padding: 0;
+	}
+
+	.personsList li{
+		width: 33.333%;
+		padding: 0 10px;
+	}
+
+	.functionsList img{
+		width: 50%;
+	}
+
+	.functionsList h4{
+		font-size: 12px;
+		padding: 0;
+	}
+
+	.subheaderPromo{
+		text-align: center;
+	}
+
+	.subheaderPromo__Text{
+		float: none;
+		display: block;
+		margin-bottom: 8px;
+		font-size: 15px;
+	}
+
+	.subheaderPromo__link{
+		float: none;
+		font-size: 15px;
+	}
+
+
+
+
+
+}
+
+@media only screen and (max-width: 640px) {
+
+	.personsList a {
+		padding: 0;
+		font-size: 14px;
+	}
+	.singlePage_palbum{
+		max-width: 100%;
+		width: auto;
+	}
+
+	.bottomInput{
+		width: 48%;
+		margin: 0;
+	}
+
+	.functionsList li{
+		width: 31.5%;
+	}
+	
+
+}
+
+
+/* Смартфоны */
+/* уже верстаются в 1 колонку*/
+
+@media only screen and (max-width: 480px) {
+
+
+	.firstScreen h1, .firstScreen h2, .firstScreen_inner h1, .firstScreen_inner h2, .categoryPersonBlock h2{
+		font-size: 24px;
+		padding-top: 0;
+		line-height: 35px;
+	}
+	
+	h2 {
+		font-size:25px;
+		padding: 30px 0 0;
+	}
+		
+	.descriptionBig{
+		font-size: 20px;
+	}
+		
+	.firstScreen__cta {
+		margin-top: 20px;
+	}
+
+	.vnedrenie__Wrapper{
+		display:block;
+		margin:0;
+		width: 100%;
+	}
+	
+	.broshura .vnedrenie__Wrapper {
+       width: 100%;
+    }
+    
+    .vnedrenie__inputButton {
+        display:block;
+		margin:0;
+		width: 100%;
+    }
+	
+	.vnedrenie__Wrapper_49 {
+		width: 100%;
+		padding: 0;
+	}
+	
+	.form__confirm, .form__cancel{
+		display:block;
+		margin-right:auto;
+		margin: 10px auto 0;
+	}
+	
+	.doubleBoolit__list {
+		padding-left: 0;
+	}
+	
+	.doubleBoolit__item, .doubleBoolit__item2 {
+		display: block;
+		width: 100%;
+		margin-bottom: 10px;
+	}
+	
+	.firstTextBlock__icoItem {
+		width: 49%;
+		text-align: center;
+	}
+	
+	.singleBoolit__list {
+		padding-left: 0;
+	}
+	
+	.singleBoolit__item {
+		display: block;
+		width: 100%;
+		float: none;
+		position: relative;
+		margin-right: 0;
+		margin-bottom: 12px;
+	}
+	
+	#vnedrenie__input_submit, #broshura__input_submit {
+		width: 100%;
+	}
+
+	.personsList li{
+		width: 32%;
+	}
+
+	.macbookOver{
+		width: 100%;
+	}
+
+	.screenContainer{
+		margin-bottom: 0;
+	}
+
+	#screenShots__bigphoto, #innerPalbum__bigphoto{
+		width: 100%;
+		height: auto;
+		padding-top: 10px;
+	}
+
+	#screenShots__previev{
+		height: auto;
+	}
+
+	.logoWrapper{
+		width: 50%;
+	}
+	.descriptionLogo {
+		font-size: 9px;
+	}
+
+	.phoneCtaWrapper{
+		display: none;
+	}
+
+	.phoneRow{
+		font-size: 20px;
+		margin-right: 0;
+	}
+
+	.topNav__link_ctaMenu{
+		margin-right: 0;
+	}
+
+	#broshura__input_submit {
+		margin-top: 0;
+	}
+	
+	.broshura .label__divider {
+		margin-top: 0px;
+	}
+
+	.partners__list {
+		margin-left:0;
+		text-align:center;
+	}
+	.partners__item {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		margin-left: 0;
+		margin-bottom: 20px;
+	}
+	
+	.partners__list {
+		list-style: none;
+		display: block;
+		margin: 0;
+		padding: 0;
+		margin-left: -2%;
+		padding-top: 25px;
+	}
+	
+	.color0e82e2__big {
+		color: #0e82e2;
+		font-size: 18px;
+	}
+
+	.secondBlock__heading{
+		color: #000;
+		text-align: center;
+		font-size: 30px;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.secondBlock__item {
+		padding: 0px;
+		text-align: center;
+	}
+
+	.secondBlock__bigText{
+		font-size: 30px;
+	}
+
+	.secondBlock__smallText{
+		font-size: 14px;
+	}
+	
+	.footer__socials {
+		text-align: center;
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	
+	.footer__contacts {
+		text-align: center;
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+	
+	.footer__copyright {
+		text-align: center;
+		float: none;
+		clear: both;
+		width: 100%;
+	}
+
+	.bigImg_wrapper{
+		width: 77%;
+		height: auto;
+		margin-bottom: 70px;
+	}
+
+	.bigImgDescr, .bigphoto__item p{
+		position: static;
+		bottom: auto;
+		width: auto;
+		display: block;
+		text-align: center;
+	}
+
+	.personsList a{
+		padding: 0;
+		font-size: 14px;
+	}
+
+	.personsBlock .container, .functionsBlock .container{
+		padding: 0;
+	}
+
+
+
+	.halfBlock{
+		margin-bottom: 40px;
+	}
+
+	.funclList_vertical{
+		padding-left: 0;
+	}
+
+	.funclItemLeft{
+		width: 15%;
+	}
+
+	.halfBlock h2{
+		margin-right: 0;
+		text-align: center;
+		padding: 10px 20px;
+		font-size: 20px;
+	}
+
+	.personIntro, .personIntroInner{
+		text-align: center;
+	}
+
+	.personIntro img, .personIntroInner img{
+		float: none;
+		margin-right: 0;
+	}
+
+	.innerPageHeading{
+		color: #297dc1;
+		font-size: 30px;
+		padding-top: 20px;
+		line-height: 40px;
+		margin-bottom: 20px;
+	}
+
+	.modal__header{
+		font-size: 26px;
+	}
+
+	.label__divider {
+		padding-top: 20px;
+		color: #fff;
+		text-align: center;
+		font-size: 14px;
+	}
+
+	.form__cancel{
+		display: none;
+	}
+
+	.vnedrenie__formLabel {
+		font-size: 14px;
+	}
+
+	.personBlock__link, .personBlockRight .personBlock__link{
+		text-align: center;
+	}
+
+	.personBlockRight .personBlock__link a{
+		margin: 0;
+	}
+
+	.vnedrenie .container{
+
+	}
+
+	.screenShots{
+		padding-top: 40px;
+	}
+
+	.functionsBlock{
+		padding-bottom: 40px;
+	}
+
+	.personBlock__link{
+		display: none;
+	}
+
+	.personBlock__link_mob{
+		display: block!important;
+	}
+
+	.midPalbum__bigphoto{
+		height: auto;
+	}
+
+	.bigphoto__img{
+		max-height: 210px;
+	}
+
+	.midPalbum__bigphoto .bigphoto__img, #innerPalbum__bigphoto .bigphoto__img{
+		position: static;
+		transform: none;
+	}
+
+	#innerPalbum__bigphoto .bigImg_wrapper{
+		margin-bottom: 0;
+	}
+
+
+}
+
+/* Iphone */ 
+
+@media only screen and (max-width: 350px) {
+	.container{
+		padding: 0 10px;
+	}
+
+	.secondBlock__heading{
+		font-size: 26px;
+		padding-top: 30px;
+		margin-bottom: 30px;
+	}
+	
+	.secondBlock__item {
+		padding: 0 30px;
+		text-align: center;
+	}
+
+	.functionsList li{
+		width: 31%;
+	}
+
+	.vnedrenie__formLabel {
+		font-size: 13px;
+	}
+
+	.topNav{
+		width: 100%;
+	}
+
+	.phoneRow{
+
+	}
+
+
+
+}
+
+

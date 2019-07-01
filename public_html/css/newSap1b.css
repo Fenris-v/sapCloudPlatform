@@ -1,0 +1,101 @@
+/*1*/
+.backgroundMaterialNumber {
+    background: url("../images/number.png") no-repeat center center;
+    height: 630px
+}
+
+.materialNumber {
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.materialNumber__breadcrumbs {
+    padding-top: 25px;
+}
+
+.breadcrumbs-nav__item {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.materialNumber__breadcrumbs-nav__link {
+    color: #a5bdd1;
+    text-decoration: none;
+}
+
+.materialNumber__breadcrumbs-nav__link:hover {
+    color: #ffffff;
+}
+
+.materialNumber__wrapper {
+    margin-top: 60px;
+}
+
+.materialNumber-left {
+    display: inline-block;
+    width: 65%;
+    margin-right: 5%;
+}
+
+.materialNumber-left h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.materialNumber-left p {
+    color: #fffefe;
+    font-size: 24px;
+    line-height: 1.5;
+    margin: 50px 0;
+}
+
+.materialNumber-left__list {
+    display: inline-block;
+    width: 50%;
+    margin-bottom: 30px;
+}
+
+.materialNumber-left__list i {
+    font-size: 40px;
+    color: #4a87f7;
+    vertical-align: middle;
+}
+
+.materialNumber-left__list span {
+    padding-left: 20px;
+    color: #fffefe;
+    font-size: 20px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+.materialNumber-right {
+    display: inline-block;
+    width: 30%;
+}
+
+.materialNumber-right p {
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 40px;
+}
+
+.materialNumber-right ul {
+    margin-bottom: 40px;
+}
+
+.materialNumber-right li {
+    color: #4ac8f5;
+    font-size: 18px;
+    list-style-type: outside;
+    list-style: outside;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.materialNumber-right span {
+    color: #ffffff;
+}
