@@ -16,21 +16,25 @@ $(document).ready(function () {
 
     $("#slider__container").owlCarousel(
         {
+            dots: false,
             loop: true,
             margin: 10,
             navText : ["",""],
+            autoplay:true,
+            autoplayTimeout:3000,
+            autoplayHoverPause:true,
             responsiveClass: true,
             responsive: {
                 0: {
-                    items: 1,
+                    items: 2,
                     nav: true,
                 },
                 600: {
-                    items: 1,
+                    items: 2,
                     nav: false,
                 },
                 1000: {
-                    items: 1,
+                    items: 3,
                     nav: true,
                 }
             }
