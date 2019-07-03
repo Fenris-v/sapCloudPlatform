@@ -215,6 +215,16 @@ h2 {
 }
 
 .task__item__invisible__text p {
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin-top: 10px;
+}
+
+.task__item__invisible__text p {
     color: #000000;
     font-size: 18px;
     line-height: 1.4;
@@ -377,7 +387,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.clients {
+.clients, .realisation {
     padding: 0 0 70px;
     background: url(../images/blueDotsBtm.png) left bottom repeat-x;
     font-size: 0;
@@ -401,7 +411,7 @@ h2 {
 }
 
 .owl-stage-outer {
-     padding-bottom: 50px;
+    padding-bottom: 50px;
 }
 
 .secondBlock__heading {
@@ -475,11 +485,12 @@ h2 {
 }
 
 .materialNumber-left__list span {
-    padding-left: 20px;
+    padding-left: 10px;
     color: #fffefe;
     font-size: 20px;
     font-weight: bold;
     vertical-align: middle;
+    line-height: 1.5;
 }
 
 .materialNumber-right {
@@ -538,16 +549,18 @@ h2 {
 
 .mobileApp__content__label {
     display: inline-block;
-    margin-right: 25px;
+    margin-right: 2%;
     vertical-align: middle;
+    width: 10%;
 }
 
 .mobileApp__content__text {
     display: inline-block;
     color: #000011;
     font-size: 20px;
-    margin: 50px 50px 50px 0;
+    margin: 50px auto 50px auto;
     vertical-align: middle;
+    width: 38%;
 }
 
 .mobileApp__content hr {
@@ -578,12 +591,267 @@ h2 {
 
 .mobileApp__web-right {
     display: inline-block;
+    width: 35%;
+    margin-left: 5%;
+}
+
+.mobileApp__content__desc-noneDots {
+    background: none;
+}
+
+.backgroundProject {
+    background: url("../images/moscow.png") no-repeat center center;
+    height: 629px;
+}
+
+.project__how {
+    text-align: center;
+}
+
+.project__how h2 {
+    font-size: 42px;
+    font-weight: bold;
+    margin: 0 auto;
+    padding: 60px 0;
+    line-height: 1;
+}
+
+.project__wrapper {
+    text-align: center;
+    font-size: 0;
+    letter-spacing: 0;
+}
+
+.project__item__wrapper {
+    text-align: center;
+    display: inline-block;
+    width: 15.8%;
+}
+
+.project__arrow {
+    display: inline-block;
+    transform: rotate(180deg);
+    padding: 70px 20px;
+}
+
+.project__item__imageWrapper {
+    padding: 45px 0;
+    width: 160px;
+    height: 160px;
+    border-radius: 80px;
+    background: #FFFFFF;
+    margin: 0 auto 30px;
+}
+
+.project__item__time {
+    background: #66b5df;
+    width: fit-content;
+    padding: 10px 30px;
+    margin: 0 auto 30px;
+}
+
+.project__item p {
+    color: #ffffff;
+    font-size: 18px;
+    width: 110%;
+    margin-left: -5%;
+}
+
+.project__item__time p {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 100%;
+    margin: 0;
+}
+
+.realisation {
+    font-size: 0;
+}
+
+.realisation-left {
+    width: 30%;
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.realisation-right {
+    display: inline-block;
+    width: 60%;
+    margin-left: 10%;
+    vertical-align: middle;
+    margin-top: 50px;
+}
+
+.realisation-right h2 {
+    color: #000011;
+    font-size: 42px;
+    font-weight: bold;
+    text-align: left;
+}
+
+.realisation-right-half {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5%;
+}
+
+.realisation-right-half p {
+    color: #000011;
+    font-size: 30px;
+}
+
+.realisation-right-half li {
+    color: #4ac8f5;
+    font-size: 18px;
+    list-style-type: outside;
+    list-style: outside;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.realisation-right-half span {
+    color: #000011;
+}
+
+/*2*/
+.metroBackground {
+    background: url("../images/metroBg.png") no-repeat center center;
+}
+
+.metro__wrapper {
+    position: relative;
+    height: 630px;
+}
+
+.metro-left {
+    display: inline-block;
+    width: 60%;
+}
+
+.metro-left h1 {
+    color: #ffffff;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 50px 0;
+}
+
+.metro-left p {
+    color: #fffefe;
+    font-size: 24px;
+    margin-bottom: 50px;
+}
+
+.metro-right {
+    position: absolute;
+    bottom: 0;
+    width: 40%;
+    display: inline-block;
+    right: -150px;
+}
+
+.metro-left__list {
+    margin-bottom: 0;
+}
+
+.metro-left hr {
+    background-color: #ffffff;
+    opacity: 0.1;
+    margin: 30px 0;
+}
+
+.target {
+    margin-top: 90px;
+    position: relative;
+}
+
+.target-left {
+    width: 55%;
+    margin-bottom: 200px;
+}
+
+.target-left h2 {
+    line-height: 1;
+}
+
+.target__dots, .functional__dots {
+    padding: 0 0 110px;
+    background: url(../images/dots-pattern.jpg) left bottom repeat-x;
+    font-size: 0;
+}
+
+.target-left p {
+    margin: 70px 0;
+}
+
+.target-right {
+    position: absolute;
+    right: 0;
+    top: 0;
     width: 40%;
 }
 
+.functional {
+    margin-top: 90px;
+    position: relative;
+}
+
+.functional-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 40%;
+}
+
+.functional-right {
+    width: 55%;
+    margin-bottom: 200px;
+    margin-left: 40%;
+}
+
+.functional-right p {
+    margin: 70px 0;
+}
+
+.result h2 {
+    line-height: 1;
+    transform: translateY(50%);
+    background: #FFFFFF;
+    width: 25%;
+    margin: 0 auto;
+}
+
+.resultContainer__desc {
+    border: 1px #e8e8e8 solid;
+}
+
+.resultContainer__desc p {
+    padding: 70px;
+    text-align: center;
+}
+
+.result__slider {
+    text-align: center;
+}
 /*----------------------------------------------------------------
 Adaptive styles
 ----------------------------------------------------------------*/
+
+@media only screen and (max-width: 1300px) {
+
+    .project__arrow {
+        padding: 60px 10px;
+    }
+
+    .project__item__imageWrapper {
+        width: 140px;
+        height: 140px;
+        padding: 35px 0;
+    }
+}
 
 @media only screen and (max-width: 1200px) {
 
@@ -653,8 +921,6 @@ Adaptive styles
         padding-top: 30px;
     }
 
-
-
     .task__item {
         margin-top: 30px;
         width: 48%;
@@ -708,6 +974,110 @@ Adaptive styles
         width: 100%;
         text-align: center;
     }
+
+    .project__how h2 {
+        font-size: 42px;
+        font-weight: bold;
+        margin: 0 auto;
+        padding: 20px 0;
+        line-height: 1;
+    }
+
+    .project__arrow {
+        padding: 45px 10px;
+    }
+
+    .project__arrow:nth-child(3n) {
+        display: none;
+    }
+
+    .project__item__wrapper {
+        width: 29%;
+    }
+
+    .project__item__imageWrapper {
+        width: 110px;
+        height: 110px;
+        padding: 20px 0;
+        margin-bottom: 10px;
+    }
+
+    .project__item__time {
+        margin-bottom: 10px;
+    }
+
+    .project__item p {
+        font-size: 16px;
+    }
+
+    .materialNumber__wrapper {
+        margin-top: 30px;
+    }
+
+    .materialNumber-left h1 {
+        font-size: 35px;
+    }
+
+    .materialNumber-left p {
+        margin: 30px 0;
+    }
+
+    .materialNumber-left__list {
+        margin-bottom: 15px;
+    }
+
+    .materialNumber-right p {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .mobileApp {
+        margin-top: 30px;
+    }
+
+    .mobileApp__image, .mobileApp__content, .mobileApp__web-left, .mobileApp__web-right, .realisation-left, .realisation-right {
+        display: block;
+        width: 100%;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .mobileApp__content h2 {
+        text-align: center;
+    }
+
+    .mobileApp__content__text {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .mobileApp__content__desc {
+        padding-top: 30px;
+    }
+
+    .mobileApp__web-left {
+        display: block;
+        width: 100%;
+        margin-bottom: 0;
+    }
+
+    .mobileApp__web-right {
+        margin: auto auto 50px;
+    }
+
+    .mobileApp__content__desc-noneDots {
+        padding-bottom: 30px;
+    }
+
+    .realisation-left {
+        margin-top: 30px;
+    }
+
+    .realisation-right {
+        margin: 0;
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 768px) {
@@ -737,6 +1107,51 @@ Adaptive styles
     .task__item__desc__text p {
         font-size: 22px;
     }
+
+    .materialNumber-left h1 {
+        font-size: 30px;
+    }
+
+    .materialNumber-left p {
+        font-size: 20px;
+        margin: 20px auto;
+    }
+
+    .materialNumber-right p {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    .project {
+        padding: 0;
+    }
+
+    .backgroundProject {
+        height: 850px;
+        background-size: cover;
+    }
+
+    .project__how h2 {
+        font-size: 30px;
+    }
+
+    .project__item__wrapper {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .project__item p {
+        width: 100%;
+    }
+
+    .project__arrow:nth-child(3n) {
+        display: inline-block;
+    }
+
+    .project__arrow:nth-child(4n+4) {
+        display: none;
+    }
+
 }
 
 @media only screen and (max-width: 640px) {
@@ -790,8 +1205,64 @@ Adaptive styles
         font-size: 20px;
         margin-bottom: 30px;
     }
+
+    .backgroundProject {
+        height: 920px;
+    }
+
+    .backgroundMaterialNumber {
+        background: linear-gradient(to right, rgb(1, 69, 125) 0%, rgb(0, 61, 112) 100%) no-repeat center center;
+        height: auto;
+    }
+
+    .materialNumber-left {
+        display: block;
+        width: 100%;
+    }
+
+    .materialNumber-right {
+        width: 100%;
+        display: block;
+    }
+
+    .materialNumber-right-half {
+        width: 40%;
+        display: inline-block;
+        margin-right: 10%;
+    }
+
+    .materialNumber-right p {
+        margin: 20px auto 15px;
+    }
+
+    .mobileApp__content__label {
+        display: inline-block;
+        margin-right: 2%;
+        vertical-align: middle;
+        width: 20%;
+    }
+
+    .mobileApp__content__text {
+        display: inline-block;
+        color: #000011;
+        font-size: 20px;
+        margin: 20px auto 20px auto;
+        vertical-align: middle;
+        width: 78%;
+    }
 }
 
 @media only screen and (max-width: 480px) {
+    .project__how h2 {
+        line-height: 1;
+        font-size: 25px;
+    }
 
+    .project__item__wrapper {
+        width: 49%;
+    }
+
+    .project__arrow {
+        display: none !important;
+    }
 }
