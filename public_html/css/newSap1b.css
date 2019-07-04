@@ -387,7 +387,7 @@ h2 {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
-.clients, .realisation {
+.clients, .realisation, .thanks {
     padding: 0 0 70px;
     background: url(../images/blueDotsBtm.png) left bottom repeat-x;
     font-size: 0;
@@ -404,10 +404,6 @@ h2 {
     width: 75%;
     vertical-align: middle;
     margin-top: 80px;
-}
-
-.owl-nav {
-    display: none;
 }
 
 .owl-stage-outer {
@@ -427,7 +423,7 @@ h2 {
 /*1*/
 .backgroundMaterialNumber {
     background: url("../images/number.png") no-repeat center center;
-    height: 630px
+    height: 630px;
 }
 
 .materialNumber__breadcrumbs {
@@ -808,12 +804,22 @@ h2 {
 
 .functional-right {
     width: 55%;
-    margin-bottom: 200px;
+    margin-bottom: 80px;
     margin-left: 40%;
 }
 
-.functional-right p {
-    margin: 70px 0;
+.functional__dots h2 {
+    color: #000000;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: left;
+    line-height: 1;
+}
+
+.functional-right li {
+    line-height: 1;
+    font-size: 20px !important;
+    margin: 10px 0 0 20px !important;
 }
 
 .result h2 {
@@ -829,13 +835,212 @@ h2 {
 }
 
 .resultContainer__desc p {
-    padding: 70px;
+    padding: 70px 70px 20px;
     text-align: center;
 }
 
 .result__slider {
     text-align: center;
 }
+
+.result__slider__text-yellow {
+    color: #ffad00;
+    font-size: 60px;
+    text-transform: uppercase;
+    line-height: 1;
+    margin-top: 20px;
+}
+
+.result__slider__text-small {
+    color: #000011;
+    font-size: 18px;
+}
+
+.result__slider__text-yellow-up {
+    font-size: 15px;
+    line-height: 1;
+}
+
+.owl-prev {
+    background: rgba(0, 0, 0, 0) url(../images/prev.png) no-repeat scroll 0 0;
+    height: 30px;
+    width: 20px;
+    float: left;
+}
+
+.owl-next {
+    background: rgba(0, 0, 0, 0) url(../images/next.png) no-repeat scroll 0 0;
+    height: 30px;
+    width: 20px;
+    float: right;
+}
+
+.result__slider {
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 0;
+}
+
+.owl-stage-outer {
+    padding: 0;
+}
+
+.owl-nav {
+    position: static !important;
+}
+
+.owl-prev {
+    position: absolute;
+    top: 25%;
+    left: -5%;
+    transition: all 0.4s ease 0s;
+}
+
+.owl-next {
+    position: absolute;
+    top: 25%;
+    right: -5%;
+    transition: all 0.4s ease 0s;
+}
+
+.owl-prev:hover {
+    background: rgba(0, 0, 0, 0) url(../images/prev.png) no-repeat scroll 0 0 !important;
+    transform: scale(1.5);
+    transition: all 0.4s ease 0s;
+}
+
+.owl-next:hover {
+    background: rgba(0, 0, 0, 0) url(../images/next.png) no-repeat scroll 0 0 !important;
+    transform: scale(1.5);
+    transition: all 0.4s ease 0s;
+}
+
+.train {
+    margin-top: 50px;
+}
+
+.backgroundTrain {
+    background: url("../images/train.png") no-repeat center center;
+    height: 545px;
+}
+
+.train__text-big {
+    text-align: center;
+    padding-top: 100px;
+    color: #ffffff;
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+.train__quote {
+    text-align: center;
+}
+
+.train__quote__img {
+    display: inline-block;
+    background-color: #0081e9;
+    border-radius: 35px;
+    vertical-align: middle;
+}
+
+.train__quote__img img {
+    padding: 25px;
+}
+
+.train__quote__text {
+    display: inline-block;
+    width: 60%;
+    vertical-align: middle;
+    margin-left: 20px;
+    text-align: left;
+}
+
+.train__quote__text p {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.rewards {
+    position: relative;
+}
+
+.rewardsContainer {
+    margin-bottom: 30px;
+}
+
+.rewards-left {
+    display: inline-block;
+    width: 50%;
+    margin: -100px auto auto -200px;
+}
+
+.rewards-right {
+    width: 50%;
+    margin-left: 100px;
+    display: inline-block;
+}
+
+.rewards-right {
+    margin-top: 50px;
+}
+
+.rewards-right h2 {
+    text-align: left;
+    color: #000000;
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.rewards-right li, .functional li {
+    color: #4ac8f5;
+    font-size: 25px;
+    list-style-type: outside;
+    list-style: outside;
+    margin: 15px 0 15px 20px;
+}
+
+.rewards-right span, .functional span {
+    color: #000011;
+}
+
+.thanks {
+    font-size: 0;
+}
+
+.thanks__title {
+    display: inline-block;
+    width: 35%;
+    vertical-align: middle;
+    margin-top: -10%;
+}
+
+.thanks__title h2 {
+    color: #000000;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.thanks__slider {
+    display: inline-block !important;
+    width: 60%;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: 5%;
+}
+
+.thanks__slider .owl-prev {
+    position: absolute;
+    top: 50%;
+    left: -5%;
+}
+
+.thanks__slider .owl-next {
+    position: absolute;
+    top: 50%;
+    right: -5%;
+}
+
 /*----------------------------------------------------------------
 Adaptive styles
 ----------------------------------------------------------------*/
@@ -850,6 +1055,18 @@ Adaptive styles
         width: 140px;
         height: 140px;
         padding: 35px 0;
+    }
+
+    .target-left p {
+        margin: 20px 0;
+    }
+
+    .target-left {
+        margin-bottom: 0;
+    }
+
+    .target__dots, .functional__dots {
+        padding: 0 0 90px;
     }
 }
 
@@ -1077,6 +1294,78 @@ Adaptive styles
     .realisation-right {
         margin: 0;
         text-align: left;
+    }
+
+    .metro-left {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .metro-right {
+        display: none;
+    }
+
+    .target {
+        margin-top: 50px;
+    }
+
+    .target-left {
+        display: block;
+        width: 100%;
+    }
+
+    .target-right, .functional-left {
+        position: static;
+        text-align: center;
+        width: auto;
+        margin-bottom: 30px;
+    }
+
+    .functional {
+        margin-top: 0;
+    }
+
+    .functional-right {
+        width: 100%;
+        display: block;
+        margin: 0 0 20px;
+    }
+
+    .functional__dots h2 {
+        text-align: center;
+    }
+
+    .result__slider {
+        width: 100%;
+    }
+
+    .rewards-left {
+        display: none;
+    }
+
+    .rewards-right {
+        width: 100%;
+    }
+
+    .rewards-right h2, .rewards-right {
+        text-align: center;
+    }
+
+    .rewards-right li {
+        text-align: left;
+    }
+
+    .thanks__title {
+        display: block;
+        width: 100%;
+        margin: 0 0 30px;
+    }
+
+    .thanks__slider {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
     }
 }
 
