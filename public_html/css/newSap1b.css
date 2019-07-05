@@ -751,6 +751,7 @@ h2 {
 
 .metro-left__list {
     margin-bottom: 0;
+    text-align: left;
 }
 
 .metro-left hr {
@@ -1336,6 +1337,20 @@ Adaptive styles
         text-align: center;
     }
 
+    .result h2 {
+        width: 100%;
+        background: none;
+    }
+
+    .resultContainer__desc {
+        border: none;
+    }
+
+    .resultContainer__desc p {
+        padding: 0;
+        margin: 40px 0 30px;
+    }
+
     .result__slider {
         width: 100%;
     }
@@ -1346,6 +1361,7 @@ Adaptive styles
 
     .rewards-right {
         width: 100%;
+        margin-left: 0;
     }
 
     .rewards-right h2, .rewards-right {
@@ -1441,6 +1457,14 @@ Adaptive styles
         display: none;
     }
 
+    .metro-left h1 {
+        margin: 30px 0;
+        font-size: 35px;
+    }
+
+    .metro-left p {
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -1539,6 +1563,12 @@ Adaptive styles
         vertical-align: middle;
         width: 78%;
     }
+
+    .train__text-big {
+        font-size: 25px;
+        line-height: 1.3;
+        margin-bottom: 30px;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -1553,5 +1583,69 @@ Adaptive styles
 
     .project__arrow {
         display: none !important;
+    }
+
+    .metro-left h1 {
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .metro-left p {
+        line-height: 1.3;
+        font-size: 22px;
+    }
+
+    .metro-left__list i {
+        font-size: 30px;
+    }
+
+    .metro-left__list span {
+        font-size: 18px;
+    }
+
+    .target {
+        margin-top: 30px;
+    }
+
+    .target__dots h2 {
+        padding-top: 10px;
+    }
+
+    .target-right {
+        margin: 0;
+    }
+
+    .functional__dots h2 {
+        font-size: 30px;
+    }
+
+    .resultContainer__desc p {
+        text-align: justify;
+    }
+
+    .train {
+        margin-top: 15px;
+    }
+
+    .train__text-big {
+        padding-top: 70px;
+        font-size: 22px;
+        text-align: justify;
+    }
+
+    .train__quote__img {
+        transform: scale(0.8);
+    }
+
+    .train__quote__text {
+        margin-left: 0;
+    }
+
+    .train__quote__text p {
+        font-size: 16px;
+    }
+
+    .train__quote {
+         text-align: left;
     }
 }
