@@ -112,13 +112,15 @@ h2 {
 .dream__whiteBlock__bg {
     background: white;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    margin-top: 30px;
 }
 
 .dream__whiteBlock__logo {
     display: inline-block;
     vertical-align: middle;
     height: 100px;
-    margin: 35px 60px;
+    margin-right: 5%;
 }
 
 .dream__whiteBlock__text {
@@ -1088,6 +1090,10 @@ Adaptive styles
 
 @media only screen and (max-width: 1200px) {
 
+    .dream__whiteBlock__logo {
+        margin-right: 1%;
+    }
+
     .dream__whiteBlock__text p {
         font-size: 35px;
     }
@@ -1120,7 +1126,7 @@ Adaptive styles
     .dream__whiteBlock__logo {
         display: block;
         text-align: center;
-        margin: 20px 60px;
+        margin: 20px 0;
     }
 
     .dream__whiteBlock__text {
