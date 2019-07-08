@@ -70,22 +70,39 @@ h2 {
 
 .dream__whiteBlock {
     font-size: 0;
-    margin: 70px auto 0;
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
 }
 
 .triangles {
-    display: inline-block;
-    height: 85px;
+    display: block;
     text-align: right;
-    width: 4.05%;
+    width: 20px;
+    position: absolute;
+    left: -20px;
+    top: 0;
+    bottom: 0;
+}
+
+.triangles__up, .triangles__down{
+    height: 50%;
+}
+
+.triangle__svg{
+    height: 100%;
+    width: 100%;
+    fill: #fff;
 }
 
 .triangles-right {
-    display: inline-block;
-    height: 85px;
+    display: block;
     text-align: right;
-    width: 4.05%;
-    transform: rotateY(180grad);
+    width: 20px;
+    right: -20px;
+    top: 0;
+    bottom: 0;
+    position: absolute;
 }
 
 .triangles__down {
@@ -94,9 +111,7 @@ h2 {
 
 .dream__whiteBlock__bg {
     background: white;
-    width: 90%;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    display: inline-block;
 }
 
 .dream__whiteBlock__logo {
@@ -1099,7 +1114,6 @@ Adaptive styles
     }
 
     .dream__whiteBlock {
-        display: inline-block;
         margin-top: 40px;
     }
 
