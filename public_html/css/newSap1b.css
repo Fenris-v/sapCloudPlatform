@@ -8,16 +8,6 @@ h2 {
     font-size: 42px;
 }
 
-.topNav__link_cta_yellow {
-    color: #ffac00;
-    border: 2px solid;
-}
-
-.topNav__link_cta_yellow:hover {
-    background: #ffac00;
-    color: #fff;
-}
-
 .topNav__item.parent.parent__point:before {
     content: "\2022";
     font-size: 26px;
@@ -55,17 +45,24 @@ h2 {
 }
 
 /*MAIN*/
-.innerPageTop__backgroundDream {
-    background: url("../images/dream.png") no-repeat center center;
-    height: 613px;
-    margin-top: -50px;
+
+.firstScreenSapClodPlatform{
+    background: none;
+    padding-bottom: 0;
+    padding-top: 0;
 }
 
-.dream h1 {
+.firstScreenSapClodPlatform h1 {
     color: #ffffff;
     font-size: 50px;
     font-weight: bold;
     text-align: center;
+}
+
+.innerPageTop__backgroundDream {
+    background: url("../images/dream.png") no-repeat center center;
+    background-size: cover;
+    padding-bottom: 70px;
 }
 
 .dream__whiteBlock {
@@ -283,11 +280,17 @@ h2 {
     margin: 50px 0 50px;
 }
 
+.services__listWrapper{
+    margin-bottom: 70px;
+}
+
 .services__item {
+    cursor: pointer;
     width: 23%;
     display: inline-block;
     text-align: center;
     margin: 0 1%;
+    transition: all 0.4s ease 0s;
 }
 
 .services__item img {
@@ -301,10 +304,6 @@ h2 {
     display: block;
 }
 
-.services__item {
-    transition: all 0.4s ease 0s;
-}
-
 .services__item:hover {
     transform: scale(1.1);
     transition: all 0.4s ease 0s;
@@ -312,6 +311,7 @@ h2 {
 }
 
 .services__desc {
+    display: none;
     background-color: #f5f7fa;
     color: #000011;
     font-size: 18px;
@@ -320,7 +320,7 @@ h2 {
 }
 
 .services__price {
-    margin: 80px 0;
+    margin: 0;
     background-color: #00447c;
 }
 
@@ -1110,11 +1110,11 @@ Adaptive styles
         padding: 3px;
     }
 
-    .dream {
+    .firstScreenSapClodPlatform {
         text-align: center;
     }
 
-    .dream h1 {
+    .firstScreenSapClodPlatform h1 {
         font-size: 40px;
         padding-top: 50px;
     }
@@ -1407,7 +1407,7 @@ Adaptive styles
 
 @media only screen and (max-width: 768px) {
 
-    .dream h1 {
+    .firstScreenSapClodPlatform h1 {
         line-height: 1.1;
         font-size: 35px;
     }
@@ -1489,7 +1489,7 @@ Adaptive styles
 
 @media only screen and (max-width: 640px) {
 
-    .dream h1 {
+    .firstScreenSapClodPlatform h1 {
         padding-top: 30px;
         font-size: 33px;
         line-height: 1;
